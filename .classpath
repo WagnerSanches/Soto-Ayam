@@ -16,7 +16,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/ict/NetBeansProjects/jason/dist/jason.jar">
+	<classpathentry kind="lib" path="/home/ict/Dropbox/Quantum/jason.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
