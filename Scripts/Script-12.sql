@@ -1,0 +1,1 @@
+SELECT Simbol, Energi_J/Energi_Ex from Energi_Java

@@ -1,0 +1,1 @@
+SELECT * FROM Quantum.Energi_Java
