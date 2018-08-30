@@ -24,7 +24,7 @@ public class ann_ann_dft_hf {
 
 	public void test() throws ClassNotFoundException {
 		double r = 0;
-		String name[] = { "H2O", "H", "H","O" };
+		String name[] = { "NaCl", "Na", "Cl" };
 		prepare_mixer(name[0]);
 		prepare_dft();
 		kernel.c_mix = 0.9;
