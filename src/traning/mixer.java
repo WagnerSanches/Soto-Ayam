@@ -57,7 +57,7 @@ public class mixer {
 		data a = new data();
 		for (int i = 0; i < a.out.length; i++) {
 			double t = hitung(a.input[i]);
-			if (b.make_cluster(t) == 2) {
+			if (b.make_cluster(t) == 1) {
 				System.out.println(i + ",");
 			}
 		}

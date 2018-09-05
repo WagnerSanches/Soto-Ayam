@@ -37,7 +37,7 @@ public class train_exc {
 		kernel.geo.data.put(name_molecule, mole);
 		driver_abinitio drv = new driver_abinitio();
 		//drv.HF_DFT(name_molecule, kernel);
-		 drv.DFT(name_molecule, kernel);
+		drv.DFT(name_molecule, kernel);
 		// drv.HF(name_molecule, kernel);
 		return drv.input;
 	}
@@ -46,7 +46,7 @@ public class train_exc {
 		train_exc a = new train_exc();
 		// a.run_train();
 		a.test2();
-		// a.tebak();
+		 //a.tebak();
 		// a.print_w();
 	}
 
@@ -66,13 +66,13 @@ public class train_exc {
 	}
 
 	public void tebak() throws ClassNotFoundException {
-		double y1 = -103.524190;
+		double y1 = -492.1602830523664;
 		double x1 = 0.1;
-		double y2 = 14.870544538;
+		double y2 = -369.32015600695473;
 		double x2 = 0.5;
 		double a = (y1 - y2) / (x1 - x2);
 		double c = y1 - a * x1;
-		double y3 = -97.5;
+		double y3 = -371.0;
 		double x3 = (y3 - c) / a;
 		System.out.println(x3);
 	}
@@ -80,10 +80,10 @@ public class train_exc {
 	public void test1() throws ClassNotFoundException {
 		prepare();
 		double r = 0;
-		String name[] = { "NaCl", "Na", "Cl" };// 74.0
+		String name[] = { "CH3Cl", "C", "Cl", "H", "H", "H" };// 371.0
 		for (int i = 1; i <= 1; i++) {
 			double en[] = new double[name.length];
-			kernel.opti = 0.12035289837342047;
+			kernel.opti = 0.494;
 			System.out.println(kernel.opti);
 			r = hitung(name[0]);
 			kernel.opti = 0;
@@ -103,8 +103,8 @@ public class train_exc {
 
 	public void test2() throws ClassNotFoundException {
 		prepare();
-		double r[] = { 0.246, 0.0732, 0.1203 };
-		String name[] = { "P2", "S2", "NaCl" };
+		double r[] = { 0.494};
+		String name[] = { "CH3Cl"};
 		int a = 0;
 		int b = name.length;
 		for (int i = a; i < b; i++) {

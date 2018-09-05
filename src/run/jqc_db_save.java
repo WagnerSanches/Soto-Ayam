@@ -44,8 +44,8 @@ public class jqc_db_save {
 		jqc_db_save a = new jqc_db_save();
 		String name[] = {"CH3OH","O","H","C","H2", "Li", "LiH", "BeH" ,"O2","CO","OH","CH4","NH","N","NH2","NH3","HF","F","LiF",
 				"C2H2","C2H4","C2H6","CN","HCN","HCO","H2CO","N2","N2H4","F2","CO2" ,"F2",
-				"CO2","Si","SiH3","SiH4","P","PH2","PH3","CH3SH","S","SH2","Na2","Na","Si2","P2","S2","NaCl","P","S"};
-		for (int i = name.length-5; i < name.length; i++) {
+				"CO2","Si","SiH3","SiH4","P","PH2","PH3","CH3SH","S","SH2","Na2","Na","Si2","P2","S2","NaCl","P","S","CH3Cl"};
+		for (int i = name.length-1; i < name.length; i++) {
 		System.out.println(name[i]);
 			a.save(name[i]);
 		}
